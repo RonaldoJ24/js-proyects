@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3 class="title">HOME</h3>
+            <div class="inner">
+                <p id="home-score" class="counter"> 0</p>
+            </div>
+            <div class="buttonContainer">
+                <button onclick="changeScore(1,0)">+1</button>
+                <button onclick="changeScore(2,0)">+2</button>
+                <button onclick="changeScore(3,0)">+3</button>
+            </div>
+        </div>
+        <div>
+            <h3 class="title">GUEST</h3>
+            <div class="inner">
+                <p id="guest-score" class="counter"> 0</p>
+            </div>
+            <div class="buttonContainer">
+                <button onclick="changeScore(1,1)">+1</button>
+                <button onclick="changeScore(2,1)">+2</button>
+                <button onclick="changeScore(3,1)">+3</button>
+            </div>
+        </div>
+        <button class="betweenButton" onclick="resetCounters()"> reset </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
